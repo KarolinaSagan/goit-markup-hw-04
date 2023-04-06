@@ -21,35 +21,41 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <section class="container box-header">
-        <a href="./index.html" class="logo"
-          ><span class="color-logo-blue">Web</span>Studio</a
-        >
-        <nav>
-          <ul class="nav-ul-style">
-            <li class="nav-li">
-              <a href="#" class="navigation">Agencja</a>
-            </li>
-            <li class="nav-li">
-              <a href="./portfolio.html" class="navigation">Portfolio</a>
-            </li>
-            <li class="nav-li">
-              <a href="#" class="navigation">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="ul-contact">
-          <li class="li-contact">
-            <a href="mailto:info@example.com" class="contact"
-              >info@example.com</a
-            >
+    <header class="container box-header">
+      <a href="./index.html" class="logo"
+        ><span class="color-logo-blue">Web</span>Studio</a
+      >
+      <nav>
+        <ul class="nav-ul-style">
+          <li class="nav-li">
+            <a href="#" class="navigation">Agencja</a>
           </li>
-          <li class="li-contact">
-            <a href="+48111111111" class="contact"> +48 111 111 111 </a>
+          <li class="nav-li">
+            <a href="./portfolio.html" class="navigation">Portfolio</a>
+          </li>
+          <li class="nav-li">
+            <a href="#" class="navigation">Kontakt</a>
           </li>
         </ul>
-      </section>
+      </nav>
+      <ul class="ul-contact">
+        <li class="li-contact">
+          <a href="mailto:info@example.com" class="contact">
+            <svg width="16" height="12" m class="icon-header">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            info@example.com</a
+          >
+        </li>
+        <li class="li-contact">
+          <a href="+48111111111" class="contact">
+            <svg width="10" height="16" class="icon-header">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +48 111 111 111
+          </a>
+        </li>
+      </ul>
     </header>
     <main>
       <section class="portfolio-section section container">
@@ -71,7 +77,7 @@
           </li>
         </ul>
         <div class="portfolio-img-div">
-          <figure>
+          <figure class="figure-portfolio">
             <img
               src="./images/img7.jpg"
               width="370"
@@ -83,7 +89,7 @@
               <p class="description-portfolio">Strona internetowa</p>
             </figcaption>
           </figure>
-          <figure>
+          <figure class="figure-portfolio">
             <img
               src="./images/img8.jpg"
               width="370"
@@ -97,7 +103,7 @@
               <p class="description-portfolio">Dizajn</p>
             </figcaption>
           </figure>
-          <figure>
+          <figure class="figure-portfolio">
             <img
               src="./images/img9.jpg"
               width="370"
@@ -109,7 +115,7 @@
               <p class="description-portfolio">Aplikacja</p>
             </figcaption>
           </figure>
-          <figure>
+          <figure class="figure-portfolio">
             <img
               src="./images/img10.jpg"
               width="370"
@@ -121,7 +127,7 @@
               <p class="description-portfolio">Marketing</p>
             </figcaption>
           </figure>
-          <figure>
+          <figure class="figure-portfolio">
             <img
               src="./images/img11.jpg"
               width="370"
@@ -133,7 +139,7 @@
               <p class="description-portfolio">Aplikacja</p>
             </figcaption>
           </figure>
-          <figure>
+          <figure class="figure-portfolio">
             <img
               src="./images/img13.jpg"
               width="370"
@@ -145,7 +151,7 @@
               <p class="description-portfolio">Strona internetowa</p>
             </figcaption>
           </figure>
-          <figure>
+          <figure class="figure-portfolio">
             <img
               src="./images/img14.jpg"
               width="370"
@@ -157,7 +163,7 @@
               <p class="description-portfolio">Dizajn</p>
             </figcaption>
           </figure>
-          <figure>
+          <figure class="figure-portfolio">
             <img
               src="./images/img15.jpg"
               width="370"
@@ -169,7 +175,7 @@
               <p class="description-portfolio">Marketing</p>
             </figcaption>
           </figure>
-          <figure>
+          <figure class="figure-portfolio">
             <img
               src="./images/img16.jpg"
               width="370"
@@ -184,20 +190,47 @@
         </div>
       </section>
     </main>
-    <footer class="footer-page">
-      <section class="container">
-        <a href="./index.html" class="logo"
-          ><span class="color-logo-blue">Web</span
-          ><span class="color-logo-white">Studio</span></a
-        >
-        <address class="address">
-          <p class="p-address">m. Warszawa, Aleje Jerozolimskie 21</p>
-          <a href="mailto:info@example.com" class="contact-footer"
-            >info@example.com</a
+    <footer class="footer-page" class="container">
+      <div class="footer-section">
+        <div class="footer-adress">
+          <a href="./index.html" class="logo"
+            ><span class="color-logo-blue">Web</span
+            ><span class="color-logo-white">Studio</span></a
           >
-          <a href="+48111111111" class="contact-footer"> +48 111 111 111 </a>
-        </address>
-      </section>
+          <address class="address">
+            <p class="p-address">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <a href="mailto:info@example.com" class="contact-footer"
+              >info@example.com</a
+            >
+            <a href="+48111111111" class="contact-footer"> +48 111 111 111 </a>
+          </address>
+        </div>
+        <div class="social">
+          <p class="p-footer">Dołącz do nas</p>
+          <ul class="ul-footer">
+            <li>
+              <svg width="44px" height="44px" class="icon">
+                <use href="./images/icons.svg#icon-instagram2"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="44px" height="44px" class="icon">
+                <use href="./images/icons.svg#icon-twitter2"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="44px" height="44px" class="icon">
+                <use href="./images/icons.svg#icon-fb2"></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="44px" height="44px" class="icon">
+                <use href="./images/icons.svg#icon-linkedin2"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
