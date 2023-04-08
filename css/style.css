@@ -91,7 +91,8 @@ header {
 .contact-footer:hover,
 .contact-footer:active,
 .navigation:focus,
-.contact-footer:focus .contact:focus,
+.contact-footer:focus,
+.contact:focus,
 .contact:active,
 .contact:hover {
   color: #2196f3;
@@ -117,7 +118,6 @@ header {
 .nav-ul-style {
   list-style: none;
   display: flex;
-  margin-top: 8px;
   padding-inline-start: 0px;
 }
 .nav-li {
@@ -134,7 +134,6 @@ header {
   justify-content: flex-end;
   margin-left: 350px;
   padding-left: 0px;
-  margin-top: 8px;
 }
 
 .li-contact:first-child {
@@ -278,6 +277,7 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-top: 10px;
 }
 
 .index-section-three-h2 {
@@ -375,7 +375,6 @@ header {
   list-style: none;
 }
 .ul-icon-index {
-  padding-top: 16px;
   display: flex;
   gap: 10px;
   list-style: none;
@@ -398,7 +397,11 @@ header {
 
 .icon:active,
 .icon:hover,
-.icon:focus,
+.icon:focus {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
 .icon-footer:active,
 .icon-footer:focus,
 .icon-footer:hover {
@@ -406,7 +409,7 @@ header {
   fill: #2196f3;
 }
 
-.li-last-section {
+.a-last-section {
   border: 1px solid #afb1b8;
   fill: #afb1b8;
   border-radius: 4px;
@@ -414,11 +417,12 @@ header {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 14.25px;
+  display: inline-block;
 }
 
-.li-last-section:active,
-.li-last-section:hover,
-.li-last-section:focus {
+.a-last-section:active,
+.a-last-section:hover,
+.a-last-section:focus {
   cursor: pointer;
   border: 1px solid #2196f3;
   fill: #2196f3;
