@@ -379,6 +379,7 @@ header {
   gap: 10px;
   list-style: none;
   padding-left: 32px;
+  padding-top: 16px;
 }
 .ul-icon-index-last-section {
   padding-top: 16px;
@@ -388,25 +389,35 @@ header {
 }
 
 .icon {
-  fill: #ffffff;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: #afb1b8;
+  display: inline-block;
+}
+.icon:hover,
+.icon:focus {
+  fill: white;
+  background: #2196f3;
+  border-radius: 50%;
 }
 
 .icon-footer {
-  fill: rgba(255, 255, 255, 0.1);
-}
-
-.icon:active,
-.icon:hover,
-.icon:focus {
-  fill: #2196f3;
-  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  fill: #ffffff;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 .icon-footer:active,
 .icon-footer:focus,
 .icon-footer:hover {
-  cursor: pointer;
-  fill: #2196f3;
+  fill: white;
+  background: #2196f3;
+  border-radius: 50%;
 }
 
 .a-last-section {
